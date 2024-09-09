@@ -1,0 +1,11 @@
+<script>
+    async function pokeMom(){
+        try{
+            let data = await fetch('https://pokeapi.co/api/v2/pokemon/');
+            console.log(await data.json());
+        }catch(err){
+            console.log(err);
+        }
+    }
+    pokeMom();
+</script>

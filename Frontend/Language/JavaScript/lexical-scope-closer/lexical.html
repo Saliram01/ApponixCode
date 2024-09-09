@@ -1,0 +1,24 @@
+<Script>
+    // function parent(){
+    //     let price = 100;
+    //     let item ='Mobile';
+    //     let child = (() => {
+    //         console.log(price, item);
+    //     })
+    //     child();
+    // }
+    // parent();
+
+
+    function parent(){
+        let price = 100;
+        let item ='Mobile';
+        let child = (() => {
+            console.log(price, item);
+        })
+        return child;
+    }
+    parent()();
+    //  or
+    // res();
+</Script>

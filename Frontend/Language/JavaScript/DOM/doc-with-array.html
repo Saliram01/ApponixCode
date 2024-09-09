@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root">
+        <h1>hello</h1>
+        <h1>hello</h1>
+    </div>
+    <script>
+        let div = document.getElementById('root')
+        console.log(div)
+
+        let arr = ["hello", "apple", "boll", "cat", "dog", "something"]
+        arr.map((e) => {
+            let h2 = document.createElement('h2')
+            h2.innerText = e
+            div.appendChild(h2)
+        })
+
+    </script>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            display: flex;
+        }
+    </style>
+    <div class="container">
+        <div class="item">
+            <img height="300px"
+                src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/q/2/edge-40-neo-payj0001in-motorola-original-imagtkf5ewhafvhh.jpeg?q=70"
+                alt="">
+            <h1>this is phon</h1>
+        </div>
+        <div class="item">
+            <img height="300px"
+                src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/q/2/edge-40-neo-payj0001in-motorola-original-imagtkf5ewhafvhh.jpeg?q=70"
+                alt="">
+            <h1>this is phon</h1>
+        </div>
+        <div class="item">
+            <img height="300px"
+                src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/q/2/edge-40-neo-payj0001in-motorola-original-imagtkf5ewhafvhh.jpeg?q=70"
+                alt="">
+            <h1>this is phon</h1>
+        </div>
+        <div class="item">
+            <img height="300px"
+                src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/q/2/edge-40-neo-payj0001in-motorola-original-imagtkf5ewhafvhh.jpeg?q=70"
+                alt="">
+            <h1>this is phon</h1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

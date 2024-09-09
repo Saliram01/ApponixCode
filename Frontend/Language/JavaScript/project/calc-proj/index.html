@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <span>Calculator</span>
+            <img src="sol.png" alt="" width="95" height="30" style="border-radius: 5px;">
+        </div>
+        <div class="display">
+            <input type="text" id="display" placeholder="0" readonly>
+        </div>
+        <div class="box">
+            <div class="butn" onclick="currentValue=currentValue + '7';document.querySelector('#display').value=currentValue">7</div>
+            <div class="butn" onclick="currentValue=currentValue + '8';document.querySelector('#display').value=currentValue">8</div>
+            <div class="butn" onclick="currentValue=currentValue + '9';document.querySelector('#display').value=currentValue">9</div>
+            <div class="butn" id="ac" onclick="currentValue='';document.querySelector('#display').value=currentValue">AC</div>
+            <div class="butn" onclick="currentValue=currentValue + '4';document.querySelector('#display').value=currentValue">4</div>
+            <div class="butn" onclick="currentValue=currentValue + '5';document.querySelector('#display').value=currentValue">5</div>
+            <div class="butn" onclick="currentValue=currentValue + '6';document.querySelector('#display').value=currentValue">6</div>
+            <div class="butn" id="mul" onclick="currentValue=currentValue + '*';document.querySelector('#display').value=currentValue">*</div>
+            <div class="butn" onclick="currentValue=currentValue + '1';document.querySelector('#display').value=currentValue">1</div>
+            <div class="butn" onclick="currentValue=currentValue + '2';document.querySelector('#display').value=currentValue">2</div>
+            <div class="butn" onclick="currentValue=currentValue + '3';document.querySelector('#display').value=currentValue">3</div>
+            <div class="butn" id="pl" onclick="currentValue=currentValue + '+';document.querySelector('#display').value=currentValue">+</div>
+            <div class="butn" onclick="currentValue=currentValue + '0';document.querySelector('#display').value=currentValue">0</div>
+            <div class="butn" onclick="currentValue=currentValue + '.';document.querySelector('#display').value=currentValue">.</div>
+            <div class="butn" onclick="currentValue=currentValue + '-';document.querySelector('#display').value=currentValue">-</div>
+            <div class="butn" id="plus" onclick="currentValue=eval(currentValue);document.querySelector('#display').value=currentValue">=</div>
+        </div>
+    </div>
+
+    <script>
+        let currentValue = '';
+        document.querySelector('#display').value=currentValue;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-image: url(px.jpg);
+}
+
+.container {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #000;
+    background-color: #e3f9ff;
+}
+.head{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.head input{
+    width: 80px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 4px;
+    margin: 0 10px;
+    
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display input{
+    width: 240px;
+    padding: 12px;
+    border: 1px solid #4a4a49;
+    outline: none;
+    border-radius: 8px;
+    font-size: 25px;
+    color: #000;
+    background: transparent;
+    box-shadow: 0px 0px 5px #42424b;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    font-size: 18px;
+    color: #fff;
+    backdrop-filter: blur(50);
+}
+.butn{
+    background-color: rgb(67, 98, 129);
+    border-radius: 15px;
+    margin: 5px;
+    width: 20px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px #060606;
+}
+#ac{
+    background-color: rgb(161, 89, 230);
+}
+#plus{
+    background-color: orangered;
+}
+#mul{
+    background-color: rgb(157, 130, 183);
+}
+#pl{
+    background-color: rgb(157, 130, 183);
+}

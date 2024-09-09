@@ -1,0 +1,12 @@
+<script>
+    async function todoData() {
+        try {
+            let data = await fetch('https://jsonplaceholder.typicode.com/todos');
+            console.log(await data.json());
+        }
+        catch (err) {
+            console.log(err);
+        }
+    }
+    todoData();
+</script>

@@ -1,0 +1,16 @@
+<script>
+    function* iceCreamGiver(){
+        yield "1 scope of ice cream"
+        yield "2 scope of ice cream"
+        yield "3 scope of ice cream extra---warning"
+    }
+    let sra =iceCreamGiver()
+    console.log("sara--",sra.next())
+    console.log("sara--",sra.next())
+    console.log("sara--",sra.next())
+    
+    let megna =iceCreamGiver()
+    console.log("megna--",megna.next())
+    console.log("sara--",sra.next())
+    console.log("sara--",sra.next())
+</script>

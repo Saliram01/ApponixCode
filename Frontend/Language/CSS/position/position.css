@@ -1,0 +1,16 @@
+/* position
+ *static
+ *relative
+ LRBT
+ *absolute
+ *fixed
+ *sticky
+ */
+
+ .box1 {
+    position: absolute; 
+    display: none;
+    /* top: 50px;
+    right: 50px; */
+
+ }

@@ -1,0 +1,81 @@
+<!-- <script>
+
+    const Singleton = (()=>{
+      let salary
+    
+      function SalaryDepartment() { /*. ur work.*/ }
+    
+      function dispatchSalary()
+      {
+        salary = new SalaryDepartment()
+        return salary
+      }
+    
+      return {
+          getSalary: () =>
+          {
+    
+            if(!salary){//if not set or not null
+             return   salary = dispatchSalary()
+            }
+             else{
+                return salary
+             }
+          
+          }
+      }
+    })()
+    
+    const singleton = Singleton.getSalary()
+    const singleton2 = Singleton.getSalary()
+    const singleton3 = Singleton.getSalary()
+    
+    console.log(singleton === singleton2)//true means only one object created thats y true
+    console.log(singleton === singleton3) // true
+    
+    
+    
+    function MultipleSalary(){
+    
+    }
+    var waseem=new MultipleSalary();
+    var paseem=new MultipleSalary()
+    console.log(abc==abc1)
+    </script> -->
+
+
+
+    <script>
+        let ST=(()=>{
+            let sal
+            function SalartDepart(){}
+            function salgiver(){
+                sal=new SalartDepart()
+                return sal
+            }
+            return {
+                getSalary:()=>{
+                    if(!sal){
+                        return   sal = salgiver()
+                    }else{
+                        return sal
+                    }
+                }
+            }
+    
+        })()
+    let sraa=ST.getSalary()
+    let sushil=ST.getSalary()
+        console.log(sraa===sushil)
+        console.log()
+    
+    
+    
+    function Multiple(){
+    
+    }
+    let p1=new Multiple()
+    let p2=new Multiple()
+    console.log(p1===p2)
+    
+    </script>

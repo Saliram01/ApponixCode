@@ -1,0 +1,45 @@
+<script>
+    // step 1
+    // async function sData() {
+    //     let res = await fetch('https://data.covid19india.org/data.json');
+    //     console.log(await res.json());
+    // }
+    // sData();
+
+    // step 2
+    async function getData() {
+        try {
+            let res = await fetch('https://data.covid19india.org/data.json');
+            console.log(await res.json());
+        }
+        catch (err) {
+            console.log(err);
+        }
+    }
+    getData();
+
+
+    // step 3
+    // fetch('https://data.covid19india.org/data.json')
+    //     .then((res) => {
+    //         return res.json();
+    //     }).then((data) => {
+    //         console.log(data);
+    //     }).catch((err) => {
+    //         console.log(err);
+    //     })
+
+
+        // step 4
+    // async function gData() {
+    //     await fetch('https://data.covid19india.org/data.json')
+    //     .then((res) => {
+    //         return res.json();
+    //     }).then((result) => {
+    //         console.log(result);
+    //     }).catch((err) => {
+    //         console.log(err);
+    //     })
+    // }
+    // gData();
+</script>
