@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+button {
+  margin: 10px 0;
+}
+
+.TO {
+  background-color: red;
+  padding: 10px 0;
+  color: #ffffff;
+  font-weight: bold;
+  width: 1200px;
+  margin: auto;
+}
+
+.menu {
+  width: 80%;
+  position: fixed;
+  height: 100vh;
+  background-color: yellow;
+  text-align: left;
+  left: -100%;
+  transition: 0.5s;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+.activeMenu {
+  left: 0%;
+}
+
+.micon {
+  position: absolute;
+  right: 10px;
+}
+
+.modalOverly {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background: transparent; */
+  /* backdrop-filter: blur(5px); */
+  display: none;
+}
+.modaldiv{
+  width: 320px;
+  height: 320px;
+  
+  position: fixed;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50% , -50%);
+  box-shadow:  0 0 2px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.en{
+  position: fixed;
+  right: -30px;
+  top: 100px;
+  transform: rotate(90deg);
+}
+.modalShow{
+  display: block;
+}
+.showModalDiv{
+  top: 50%;
+}
+
+/* FAQ */
+
+.faqOuter{
+  width: 1320px;
+  margin: auto;
+}
+.faqItems{
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+.faqItems h2{
+  margin: 0;
+  padding: 10px;
+  background-color: #414141;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+.faqItems p{
+  text-align: left;
+  margin: 0;
+  height: 0;
+  transition: 0.5s ;
+  padding: 0;
+  transform: scaleY(0);
+}
+
+.activeAns{
+  height: auto !important;
+  transform: scaleY(1) !important;
+  padding: 10px !important;
+}
