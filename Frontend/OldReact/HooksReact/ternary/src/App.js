@@ -68,7 +68,7 @@ function App() {
         <button className={btnModule.m} onClick={() => setPstatus(!pstatus)}>{pstatus ? 'Hide' : 'Show'}</button>
       </div>
 
-      {/* FAQ  */}
+      {/* FAQ  */} 
 
       <div className="">
         <h2>Frequently Asked Questions (FAQs)</h2>

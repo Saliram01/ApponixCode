@@ -5,9 +5,9 @@ function App() {
   let [todoList, setTodolList] = useState([]);
 
   const saveTodoList = (event) => {
-    
+
     let toname = event.target.toname.value;
-    
+
     if (todoList.includes(toname)) {
       let finaltodoList = [...todoList, toname];
       setTodolList(finaltodoList);
@@ -15,13 +15,13 @@ function App() {
     else {
       alert("Already exist !");
     }
-    
+
     event.preventDefault();
   }
 
   let list = todoList.map((value, i) => {
     return (
-      <ListItem value={value} key={i}/>
+      <ListItem value={value} key={i} />
     )
 
   })
